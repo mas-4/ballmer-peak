@@ -7,9 +7,9 @@ Finding your Ballmer Peak. Estimated by Randall Munroe to be `0.135 < p < 0.14`
 
 # Use
 
-This is an absurdly simple script. The initial commit takes a json object, but
-I'm changing it to just use an internal structure so I can run it on my Ipad in
-Pythonista.
+This is an absurdly simple script. The initial commit took a json object, but I
+just inlined the input data in the script. So just open the script and modify
+what's present there before running.
 
 # Time
 
