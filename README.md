@@ -1,7 +1,7 @@
 # Ballmer Peak Calculator
 
-Finding your Ballmer Peak. Estimated by Randall Munroe to be `0.135 < p < 0.14`
-(I eyeballed it).
+Finding your Ballmer Peak. Estimated by Randall Munroe to be `0.129 < p < 0.138`
+(See frame 2).
 
 ![Ballmer Peak](https://imgs.xkcd.com/comics/ballmer_peak.png)
 
