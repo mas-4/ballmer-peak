@@ -1,7 +1,18 @@
-import json
-import argparse
 from typing import Tuple, List
 from enum import Enum
+
+
+# Modify Me
+data = {
+    "weight": 225,
+    "sex": "m",
+    "time": 0.25,
+    "ingredients": [
+        [1, 0.24],
+        [1, 0.4],
+        [1, 0.16]
+    ]
+}
 
 
 class R(Enum):
@@ -35,16 +46,6 @@ def calc_alcohol(ingredients: List[Tuple[float, float]]) -> float:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Find your abv when drinking")
-    parser.add_argument(
-        "infile",
-        action="store",
-        type=str,
-        help="A special json file to describe what you drank.",
-    )
-    args = parser.parse_args()
-    with open(args.infile, "rt") as fin:
-        data = json.load(fin)
     abv = calc_abv(data["ingredients"])
     print(f"Your drink had an abv of {abv}")
     alcohol = calc_alcohol(data["ingredients"])
